@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>𝑺𝑯𝑶𝑲𝑼𝑵𝑰𝑵</title>
+    <link rel="icon" href="image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section>
+    <header class="header">
+        <a class="logo"><img src="image/logo.jpg" alt="" loading="lazy"> </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+          <a href="index.html" style="--i:0;">Inicio</a>
+        </nav>
+      </header>
+</section>
+<br>
+<br>
+<br>
+<br>
+<section class="contenedor">
+    <h2 class="mi-titulo2">Galeria</h2>
+<div class="timeline">
+    <div class="event">
+      <img src="image/curso1.jpg" alt="Imagen 1" onclick="openModal('image/curso1.jpg')">
+    </div>
+    <div class="event">
+      <img src="image/curso2.jpg" alt="Imagen 2" onclick="openModal('image/curso2.jpg')">
+    </div>
+    <div class="event">
+      <img src="image/curso3.jpg" alt="Imagen 3" onclick="openModal('image/curso3.jpg')">
+    </div>
+    <div class="event">
+        <img src="image/curso1.jpg" alt="Imagen 1" onclick="openModal('image/curso1.jpg')">
+      </div>
+      <div class="event">
+        <img src="image/curso2.jpg" alt="Imagen 2" onclick="openModal('image/curso2.jpg')">
+      </div>
+      <div class="event">
+        <img src="image/curso3.jpg" alt="Imagen 3" onclick="openModal('image/curso3.jpg')">
+      </div>
+      <div class="event">
+        <img src="image/curso1.jpg" alt="Imagen 1" onclick="openModal('image/curso1.jpg')">
+      </div>
+      <div class="event">
+        <img src="image/curso2.jpg" alt="Imagen 2" onclick="openModal('image/curso2.jpg')">
+      </div>
+      <div class="event">
+        <img src="image/curso3.jpg" alt="Imagen 3" onclick="openModal('image/curso3.jpg')">
+      </div>
+    <!-- Agrega más eventos según sea necesario -->
+  </div>
+  <div class="modal" id="myModal">
+    <span onclick="closeModal()" style="position: absolute; top: 110px; right: 40px; font-size: 120px; cursor: pointer;">&times;</span>
+    <img id="modalImg" src="" alt="Imagen Ampliada">
+  </div>
+</section>
+  <script>
+    function openModal(imageSrc) {
+      const modal = document.getElementById('myModal');
+      const modalImg = document.getElementById('modalImg');
+      modal.style.display = 'flex';
+      modalImg.src = imageSrc;
+    }
+    function closeModal() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
+  </script>
+  <section>
+    <div class="icon-container">
+      <a href="https://wa.me/56962327819"><img src="image/chat2.png" loading="lazy" alt=""></a>
+  </div>
+    <div class="marca-de-agua">
+      <p>Desarrollado por Abraham Pulgar</p>
+    </div>
+  </section> 
+</body>
+</html>
+   
